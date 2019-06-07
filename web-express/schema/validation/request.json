@@ -1,0 +1,13 @@
+{
+    "id": "request-post",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [ "walletAddress" ],
+    "properties": {
+        "walletAddress": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+        }
+    }
+}

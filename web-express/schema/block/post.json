@@ -1,0 +1,35 @@
+{
+    "id": "block-post",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [ "walletAddress", "star" ],
+    "properties": {
+        "walletAddress": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+        },
+        "star": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [ "dec", "ra", "story" ],
+            "properties": {
+                "dec": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 100
+                },
+                "ra": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 100
+                },
+                "story": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 256
+                }
+            }
+        }
+    }
+}

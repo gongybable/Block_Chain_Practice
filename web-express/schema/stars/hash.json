@@ -1,0 +1,13 @@
+{
+    "id": "stars-get-hash",
+    "type": "object",
+    "additionalProperties": false,
+    "required" : ["hash"],
+    "properties" : {
+        "hash": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+        }
+    }
+}
